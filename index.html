@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城 - 小米10 Pro、Redmi 10X、小米MIX Alpha，小米电视官方网站</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="icon" href="./favicon.ico">
+    <script>
+        var name = "window的全局属性";
+        var func = function(){
+            console.log(this.name);
+        };
+        var obj1 = {
+            name:"我是obj1的属性",
+            sayName:func
+        }
+        var obj2 = {
+            name:"我是obj2的属性",
+            sayName:func
+        }
+        
+        func(); //this==window this.name== "window的全局属性"
+        obj1.sayName(); //this == obj1  this.name=="我是obj1的属性"
+        obj2.sayName(); // this == obj2  this.name == "我是obj2的属性"
+    </script>
+</head>
+<body>
+    <div class="header">
+        <!-- topbar -->
+        <div class="topbar-wrapper">
+            <div class="topbar w clearfix">
+                <ul class="services">
+                    <li><a href="javascript:;">小米商城</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">MIUI</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">IoT</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">云服务</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">金融</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">有品</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">小爱开放平台</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">企业团购</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">资质证照</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">协议规则</a></li>
+                    <span class="sep">|</span>
+                    <li><a class="appcode-wrapper" href="javascript:;">下载app
+                        <span class="appcode">
+                            <img src="./img/download.png" alt="" class="QRcode">
+                            小米商城APP      
+                        </span>
+                    </a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">智能生活</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">Select Location</a></li>
+                </ul>
+                <ul class="shopping-cart">
+                    <a href="javascript:;"><i class="fas fa-shopping-cart"></i>购物车
+                        <span class="cart-mini-num">(0)</span>
+                    </a>
+                    <div class="cart-menu ">
+                        <p class="info">宁不买点东西好意思嗷？</p>
+                    </div>      
+                </ul>
+                <ul class="userinfo">
+                    <li><a href="javascript:;">登录</a></li>
+                    <span class="sep">|</span>
+                    <li><a href="javascript:;">注册</a></li>
+                    <span class="sep">|</span>
+                    <span class="message"><a href="javascript:;">消息通知</a></span>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- siteheader -->
+        <div class="site-header">
+            <div class="container w">
+                <!-- 之所以用h1是因为非常重要 -->
+                <h1 class="logo">
+                    <a href="" class="mi-logo"></a>
+                    <a href="" class="mi-home"></a>
+                </h1>
+                <!-- 中间的商品类别导航栏 -->
+                <ul class="nav-list">
+                    <li class="nav-catogory clearfix">
+                        <a href="javascript:;" class="link-catogory">全部商品分类</a>
+                        <div class="site-catogory">
+                            <ul class="site-catogory-list clearfix">
+                                <li class="catogory-item"><a href="javascript:;" class="title">手机 电话卡<em class="fas fa-angle-right"></em></a></li>
+                                <li class="catogory-item"><a href="javascript:;" class="title">电视 盒子<em class="fas fa-angle-right"></em></a></li>
+                                <li class="catogory-item"><a href="javascript:;" class="title">笔记本 显示器<em class="fas fa-angle-right"></em></a></li>
+                                <li class="catogory-item"><a href="javascript:;" class="title">家电 插线板<em class="fas fa-angle-right"></em></a></li>
+                                <li class="catogory-item"><a href="javascript:;" class="title">出行 穿戴<em class="fas fa-angle-right"></em></a></li>
+                                <li class="catogory-item"><a href="javascript:;" class="title">智能 路由器<em class="fas fa-angle-right"></em></a></li>
+                                <li class="catogory-item"><a href="javascript:;" class="title">电源 配件<em class="fas fa-angle-right"></em></a></li>
+                                <li class="catogory-item"><a href="javascript:;" class="title">情趣用品 母婴<em class="fas fa-angle-right"></em></a></li>
+                                <li class="catogory-item"><a href="javascript:;" class="title">耳机 音箱<em class="fas fa-angle-right"></em></a></li>
+                                <li class="catogory-item"><a href="javascript:;" class="title">生活 箱包<em class="fas fa-angle-right"></em></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item show-on-hover"><a href="javascript:;">小米手机</a></li>
+                    <li class="nav-item show-on-hover"><a href="javascript:;">Redmi 红米</a></li>
+                    <li class="nav-item show-on-hover"><a href="javascript:;">电视</a></li>
+                    <li class="nav-item show-on-hover"><a href="javascript:;">笔记本</a></li>
+                    <li class="nav-item show-on-hover"><a href="javascript:;">家电</a></li>
+                    <li class="nav-item show-on-hover"><a href="javascript:;">路由器</a></li>
+                    <li class="nav-item show-on-hover"><a href="javascript:;">智能硬件</a></li>
+                    <li class="nav-item"><a href="javascript:;">服务</a></li>
+                    <li class="nav-item"><a href="javascript:;">社区</a></li>
+
+                    <div class="header-nav-menu">
+
+                    </div>
+                </ul>
+                <!-- 右侧的搜索框 -->
+                <div class="header-search">
+                    <form class="search" action="#">
+                        <input class = "search-inp" type="text" >
+                        <button class = "search-button fas fa-search">
+                        </button>
+                    </form>
+                </div>
+            </div>   
+        </div>
+        </div>
+    
+    <!-- home-hero -->
+    <div class="home-hero-container clearfix">
+        <div class="home-hero">
+            <!-- 轮播图 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img class="banner" src="./img/banner1.jpg" alt="">
+                    <img class="banner" src="./img/banner2.jpg" alt="">
+                    <img class="banner" src="./img/banner3.jpg" alt="">
+                    <img class="banner" src="./img/banner4.jpg" alt="">
+                    <img class="banner" src="./img/banner5.jpg" alt="">
+                    <div class="bullet-container clearfix">
+                        <a href="#" class="bullet"></a>
+                        <a href="#" class="bullet"></a>
+                        <a href="#" class="bullet"></a>
+                        <a href="#" class="bullet"></a>
+                        <a href="#" class="bullet"></a>
+                    </div>
+                    <div class="swiper-button swiper-button-prev"></div>
+                    <div class="swiper-button swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="home-hero-sub w">
+                <div class="home-hero-sub-left">
+                    <ul class="home-channel-list clearfix">
+                        <li><a href="javascript:;"><i class="fas fa-clock"></i>小米秒杀</a></li>
+                        <li><a href="javascript:;"><i class="fas fa-city"></i>企业团购</a></li>
+                        <li><a href="javascript:;"><i class="fas fa-frog"></i>学习一个</a></li>
+                        <li><a href="javascript:;"><i class="fas fa-sim-card"></i>米粉卡</a></li>
+                        <li><a href="javascript:;"><i class="fas fa-euro-sign"></i>外汇服务</a></li>
+                        <li><a href="javascript:;"><i class="fab fa-amazon"></i>子站链接</a></li>
+                    </ul>
+                </div>
+
+                <div class="home-hero-sub-right">
+                    <ul class="home-promo-list clearfix">
+                        <li><a href="javascript:;"><img src="./img/1.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./img/2.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="./img/3.jpg" alt=""></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    
+
+    <!-- home-tool-bar -->
+    <div class="home-toolbar">
+        <a href="javascript:;">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="pop-content">
+                <img src="./img/download.png" alt="">
+                <span class="desc">扫码领取新人百元礼包</span>
+            </div>
+        </a>
+        <a  href="javascript:;">
+            <i class="fas fa-wheelchair"></i>  
+            <span class="text">残障中心</span>
+        </a>
+        <a  href="javascript:;">
+            <i class="fas fa-wrench"></i> 
+            <span class="text">售后服务</span>
+        </a>
+        <a  href="javascript:;">
+            <i class="fab fa-teamspeak"></i> 
+            <span class="text">祖安客服</span>
+        </a>
+        <a  href="javascript:;">
+            <i class="fas fa-shopping-cart"></i> 
+            <span class="text">购物车</span>
+        </a>
+    </div>
+    
+</body>
+</html>
